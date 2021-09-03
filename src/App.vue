@@ -1,15 +1,14 @@
 <template>
-  <div>hi</div>
-  <FirstComponents/>
+  <div>导航栏
+  <router-link to="/">第一个组件</router-link>
+  <router-link to="/xxx">第二个组件</router-link>
+  </div>
+<router-view/>
 </template>
 
 <script>
-import FirstComponents from './components/FirstComponents.vue';
 
 export default {
-  name: 'App',
-  components: {
-    FirstComponents
-  }
+  name: 'App'
 }
 </script>
